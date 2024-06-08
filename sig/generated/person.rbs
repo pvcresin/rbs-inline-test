@@ -1,17 +1,13 @@
 # Generated from lib/person.rb with RBS::Inline
 
 class Person
-  attr_reader name: String
+  attr_reader name: untyped
 
-  attr_reader addresses: Array[String]
+  attr_reader addresses: untyped
 
-  # @rbs name: String
-  # @rbs addresses: Array[String]
-  # @rbs returns void
-  def initialize: (name: String, addresses: Array[String]) -> void
+  def initialize: (name: untyped, addresses: untyped) -> untyped
 
-  def to_s: () -> String
+  def to_s: () -> untyped
 
-  # @rbs yields (String) -> void
-  def each_address: () { (String) -> void } -> void
+  def each_address: () ?{ (?) -> untyped } -> untyped
 end

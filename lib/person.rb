@@ -1,24 +1,20 @@
 # rbs_inline: enabled
 
 class Person
-  attr_reader :name #:: String
+  attr_reader :name
 
-  attr_reader :addresses #:: Array[String]
+  attr_reader :addresses
 
-  # @rbs name: String
-  # @rbs addresses: Array[String]
-  # @rbs returns void
   def initialize(name:, addresses:)
     @name = name
     @addresses = addresses
   end
 
-  def to_s #:: String
+  def to_s
     "Person(name = #{name}, addresses = #{addresses.join(", ")})"
   end
 
-  # @rbs yields (String) -> void
-  def each_address(&block) #:: void
+  def each_address(&block)
     addresses.each(&block)
   end
 end
