@@ -24,3 +24,9 @@ VS Code Steep extension will show the type information and show the error messag
 ```console
 bundle exec steep check
 ```
+
+## Images
+
+- ![step1](images/step1.png)
+- ![step2](images/step2.png)
+- ![step3](images/step3.png)
