@@ -18,3 +18,9 @@ edit .rb and generate .rbs files
 ```
 lib/*.rb -> sig/generated/*.rbs
 ```
+
+VS Code Steep extension will show the type information and show the error message.
+
+```console
+bundle exec steep check
+```
